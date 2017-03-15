@@ -1,0 +1,88 @@
+div {
+  font-family: 'Roboto', sans-serif;
+}
+p {
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  font-size: 38px;
+  text-shadow: 2px 2px #CCCCCC;
+}
+.harveyImage {
+  height: 80px;
+  width:40px;
+  display: block;
+  margin: auto;
+  bottom: 0;
+  opacity:0;
+  animation: showHarvey 1s 1s forwards;
+}
+.harveyStyle{
+  width: 8%;
+  bottom:0;
+  position: absolute;
+}
+.tempBarHigh {
+  width: 8%;
+  background: lightpink;
+  animation: barGrowth 1s ease-in;
+  position: absolute;
+  bottom:0;
+  z-index: -1;
+  text-align: center;
+  font-size: 30px;
+}
+.tempBarLow {
+  width: 8%;
+  background: lightblue;
+  animation: barGrowth 1s ease-in;
+  position:absolute;
+  bottom:0;
+  text-align: center;
+  font-size: 28px;
+}
+.tempBars{
+  width: 8%;
+  align-items: flex-end;
+}
+.tempDay {
+  width: 8%;
+  text-align: center;
+}
+.flex-container {
+  position: relative;
+  display: flex;
+  margin: 0 6%;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-left: 3px solid white;
+  border-bottom: 3px solid white;
+  padding: 2px;
+}
+.flex-container-bottom {
+  display: flex;
+  margin: 0 6%;
+  justify-content: space-between;
+  border-left: 3px solid white;
+}
+@keyframes barGrowth {
+  0% {
+    max-height: 0%;
+  }
+  100% {
+    max-height: 100%;
+  }
+}
+@keyframes showHarvey {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.dayText {
+  padding-top: 2px;
+  font-size: 18px;
+}
